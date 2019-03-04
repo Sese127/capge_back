@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: capgemini.stage.Capgemini2ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 2, Errors: 4, Skipped: 0, Time elapsed: 21.754 s <<< FAILURE! - in capgemini.stage.Capgemini2ApplicationTests
+encoder(capgemini.stage.Capgemini2ApplicationTests)  Time elapsed: 0.243 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_6nit1ynrjkrd1hp1c73d60rn3]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at capgemini.stage.Capgemini2ApplicationTests.encoder(Capgemini2ApplicationTests.java:153)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at capgemini.stage.Capgemini2ApplicationTests.encoder(Capgemini2ApplicationTests.java:153)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ztevoz@ztevoz.com' for key 'UK_6nit1ynrjkrd1hp1c73d60rn3'
+	at capgemini.stage.Capgemini2ApplicationTests.encoder(Capgemini2ApplicationTests.java:153)
+
+delete(capgemini.stage.Capgemini2ApplicationTests)  Time elapsed: 0.155 s  <<< FAILURE!
+java.lang.AssertionError: expected:<4> but was:<0>
+	at capgemini.stage.Capgemini2ApplicationTests.delete(Capgemini2ApplicationTests.java:83)
+
+update(capgemini.stage.Capgemini2ApplicationTests)  Time elapsed: 0.054 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_6nit1ynrjkrd1hp1c73d60rn3]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at capgemini.stage.Capgemini2ApplicationTests.update(Capgemini2ApplicationTests.java:106)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at capgemini.stage.Capgemini2ApplicationTests.update(Capgemini2ApplicationTests.java:106)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'paul@paul' for key 'UK_6nit1ynrjkrd1hp1c73d60rn3'
+	at capgemini.stage.Capgemini2ApplicationTests.update(Capgemini2ApplicationTests.java:106)
+
+role(capgemini.stage.Capgemini2ApplicationTests)  Time elapsed: 0.037 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_6nit1ynrjkrd1hp1c73d60rn3]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at capgemini.stage.Capgemini2ApplicationTests.role(Capgemini2ApplicationTests.java:167)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at capgemini.stage.Capgemini2ApplicationTests.role(Capgemini2ApplicationTests.java:167)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'a' for key 'UK_6nit1ynrjkrd1hp1c73d60rn3'
+	at capgemini.stage.Capgemini2ApplicationTests.role(Capgemini2ApplicationTests.java:167)
+
+token(capgemini.stage.Capgemini2ApplicationTests)  Time elapsed: 0.035 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [UK_6nit1ynrjkrd1hp1c73d60rn3]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at capgemini.stage.Capgemini2ApplicationTests.token(Capgemini2ApplicationTests.java:116)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at capgemini.stage.Capgemini2ApplicationTests.token(Capgemini2ApplicationTests.java:116)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'a' for key 'UK_6nit1ynrjkrd1hp1c73d60rn3'
+	at capgemini.stage.Capgemini2ApplicationTests.token(Capgemini2ApplicationTests.java:116)
+
+contextLoads(capgemini.stage.Capgemini2ApplicationTests)  Time elapsed: 0.055 s  <<< FAILURE!
+java.lang.AssertionError: expected:<6> but was:<1>
+	at capgemini.stage.Capgemini2ApplicationTests.contextLoads(Capgemini2ApplicationTests.java:70)
+
